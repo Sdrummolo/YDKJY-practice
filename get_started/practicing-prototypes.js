@@ -9,7 +9,6 @@ function randMax(max) {
 var reel = {
   symbols: ["♠", "♥", "♦", "♣", "☺", "★", "☾", "☀"],
 
-  // Crea this.position
   spin() {
     if (this.position == null) {
       this.position = randMax(this.symbols.length - 1)
@@ -52,6 +51,7 @@ var slotMachine = {
           line.push("|")
         }
       })
+
       lines.push(line)
       tempIndex++
     }
